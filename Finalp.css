@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ogg;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+}
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#home #circle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color:rgba(141, 5, 5, 0.961);
+  border-radius: 50%;
+}
+#circle img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#top img {
+  transform: translate(-50%, -50%) rotate(-180deg) scale(2);
+}
+#btm {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#btm img:nth-child(1) {
+  transform: translate(-50%, -50%) scale(2.2);
+}
+#btm img:nth-child(2) {
+  transform: translate(-50%, -50%) scale(2);
+}
+#btm img:nth-child(3) {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+#top img:nth-child(1) {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+#top img:nth-child(2) {
+  transform: translate(-50%, -50%) scale(1);
+}
+#top img:nth-child(3) {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#smcircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+
+  background-color: #fff;
+}
+#home #nav #second #nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99999;
+  position: absolute;
+  padding: 30px 50px;
+}
+#home #btmnav, #second #btmnav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 9999;
+  padding: 20px 100px;
+  bottom: 0;
+}
+#btmnav img {
+  color: black;
+}
+#nav h1 {
+    left: 2%;
+  font-size: 6vw;
+  color: #cb0433;
+}
+#centerimg {
+  width: 24vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  overflow: hidden;
+}
+#centerimg h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#centerimg #cimg {
+  width: 100%;
+  height: 190px;
+
+  overflow: hidden;
+}
+#cimg img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#second {
+    position: relative;
+  width: 100%;
+  height: 100vh;
+ 
+
+}
+#overlay  #gallery {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 9999999;
+  font-size: 10vw;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  pointer-events: none;
+  text-transform: uppercase;
+ 
+}
+#gola {
+  width: 5vw;
+  height: 5vw;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: black;
+}
+#overlay  #BF {
+    position: absolute;
+    bottom: -50%;
+    left: 80%;
+    transform: translate(-50%, 0%) rotate(30%);
+    transform-origin: 0% 50%;
+    z-index: 9999999;
+    font-size: 7vw;
+    font-weight: 900;
+    font-family: "Times New Roman", Times, serif;
+    pointer-events: none;
+    color:#fff;
+  }
+#stop{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height:65%;
+    border-bottom: 1px solid #dad;
+    
+
+}
+#sbtm{
+    position: absolute;
+    width: 100%;
+    height:35%;
+    background-color: black;
+    
+
+}
+#sbtm p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+.circle{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+}
+#stop .pu{
+    left: 45%;
+    background-color: rgb(249, 99, 99);
+}
+#stop .pi{
+    left: 53%;
+    background: linear-gradient(to right, #f65454, #800000);
+}
+#sbtm p:nth-child(1){
+    opacity:0;
+
+}
+#stop #gradient{
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+    left: 100%;
+    font-size: 17vw;
+    font-weight: 100;
+    z-index: 9999;
+}
+@media(max-width: 500px){
+    #home #nav, #second #nav {
+        padding:20px;
+    }
+    #nav h1{
+        font-size: 6vw;
+    }
+}
+
+
+
+
